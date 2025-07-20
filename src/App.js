@@ -24,17 +24,25 @@ function App() {
 
   const [goals, setGoals] = useState ([])
   const [ totalSavedAmount, setTotalSavedAmount] = useState (0)
+  const [completedGoal, setCompletedGoal] = useState (0)
   useEffect (() => {
     fetch('http://localhost:4000/goals')
     .then(res => res.json())
     .then(data => {
       setGoals(data)
       let totalSaved = 0
+      let totalCompleted = 0
+      
       for (let goal of data) {
         totalSaved = goal.savedAmount + totalSaved
         console.log(goal.savedAmount)
+        if (goal.targetAmount == goal.savedAmount) {
+          totalCompleted += 1
+        }
       }
+
       setTotalSavedAmount (totalSaved)
+      setCompletedGoal(totalCompleted)
     })
   },[])
   return (
@@ -44,7 +52,7 @@ function App() {
         <button>Add</button>
         <div>Total goals:{goals.length}</div>
         <div>totalSavedAmount: {totalSavedAmount}</div>
-
+        <div>completedGoal: {completedGoal}</div>
       </header>
       <section>
         <ol>

@@ -2,6 +2,7 @@
 import './App.css';
 import { useEffect } from 'react';
 import { useState } from 'react';
+const URL = 'http://localhost:4000/goals'
 
 function App() {
   // const goals = [
@@ -26,7 +27,7 @@ function App() {
   const [ totalSavedAmount, setTotalSavedAmount] = useState (0)
   const [completedGoal, setCompletedGoal] = useState (0)
   useEffect (() => {
-    fetch('http://localhost:4000/goals')
+    fetch(URL)
     .then(res => res.json())
     .then(data => {
       setGoals(data)
@@ -45,6 +46,10 @@ function App() {
       setCompletedGoal(totalCompleted)
     })
   },[])
+  function handledelete(id) { 
+    fetch(`${URL}/${id}`, {method: 'DELETE'})
+    .then(res => console.log(id))
+  }
   return (
     <div className="App">
       <header>
@@ -62,6 +67,7 @@ function App() {
             <div>remaining amount: {goal.targetAmount - goal.savedAmount}</div>
             <div>progress: <progress max= '100' value={goal.savedAmount/ goal.targetAmount*100}></progress></div>
             <div>deadline: {goal.deadline}</div>
+            <form><button type='submit' onClick={ (event)=>handledelete(goal.id)}>Delete</button></form>
             <br/></li>
           ))}
         </ol>

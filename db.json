@@ -1,9 +1,6 @@
 {
-
   "goals": [
-
     {
-
       "id": "1",
 
       "name": "Travel Fund - Japan",
@@ -17,11 +14,9 @@
       "deadline": "2025-12-31",
 
       "createdAt": "2024-01-15"
-
     },
 
     {
-
       "id": "2",
 
       "name": "Emergency Fund",
@@ -35,11 +30,9 @@
       "deadline": "2026-06-30",
 
       "createdAt": "2023-05-01"
-
     },
 
     {
-
       "id": "3",
 
       "name": "New Laptop",
@@ -53,11 +46,9 @@
       "deadline": "2024-07-20",
 
       "createdAt": "2024-03-10"
-
     },
 
     {
-
       "id": "4",
 
       "name": "Down Payment - House",
@@ -71,11 +62,9 @@
       "deadline": "2027-12-31",
 
       "createdAt": "2024-02-01"
-
     },
 
     {
-
       "id": "5",
 
       "name": "Car Maintenance",
@@ -89,11 +78,9 @@
       "deadline": "2025-09-15",
 
       "createdAt": "2024-06-01"
-
     },
 
     {
-
       "id": "6",
 
       "name": "Education Fund",
@@ -107,11 +94,9 @@
       "deadline": "2028-01-01",
 
       "createdAt": "2024-04-20"
-
     },
 
     {
-
       "id": "7",
 
       "name": "Holiday Gifts",
@@ -125,11 +110,9 @@
       "deadline": "2024-08-10",
 
       "createdAt": "2024-07-01"
-
     },
 
     {
-
       "id": "8",
 
       "name": "New Phone",
@@ -143,11 +126,9 @@
       "deadline": "2025-01-31",
 
       "createdAt": "2024-07-10"
-
     },
 
     {
-
       "id": "9",
 
       "name": "Retirement Savings",
@@ -161,11 +142,9 @@
       "deadline": "2035-01-01",
 
       "createdAt": "2023-01-01"
-
     },
 
     {
-
       "id": "10",
 
       "name": "Home Renovation",
@@ -179,9 +158,6 @@
       "deadline": "2025-03-31",
 
       "createdAt": "2024-05-15"
-
     }
-
   ]
-
 }

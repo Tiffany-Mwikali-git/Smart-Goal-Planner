@@ -2,6 +2,7 @@
 import './App.css';
 import { useEffect } from 'react';
 import { useState } from 'react';
+import Warning from './components/Warning';
 const URL = 'http://localhost:4000/goals'
 
 function App() {
@@ -98,6 +99,7 @@ function App() {
             <div>remaining amount: {goal.targetAmount - goal.savedAmount}</div>
             <div>progress: <progress max= '100' value={goal.savedAmount/ goal.targetAmount*100}></progress></div>
             <div>deadline: {goal.deadline}</div>
+            <Warning/>
             <form><button type='submit' onClick={ (event)=>handledelete(goal.id)}>Delete</button></form>
             <br/></li>
           ))}

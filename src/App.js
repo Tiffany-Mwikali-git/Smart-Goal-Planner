@@ -58,9 +58,10 @@ function App() {
         <ol>
           {goals.map((goal) => (
             <li key={goal.id}>{goal.name}
+            <div>saved/target: {goal.savedAmount}/{goal.targetAmount}</div>
             <div>progress: <progress max= '100' value={goal.savedAmount/ goal.targetAmount*100}></progress></div>
             <div>deadline: {goal.deadline}</div>
-            </li>
+            <br/></li>
           ))}
         </ol>
       </section>

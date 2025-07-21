@@ -3,7 +3,7 @@ import './App.css';
 import { useEffect } from 'react';
 import { useState } from 'react';
 import Warning from './components/Warning';
-const URL = 'http://localhost:4000/goals'
+const URL = 'https://goal-json-server.onrender.com/goals'
 
 function App() {
   // const goals = [
@@ -29,6 +29,7 @@ function App() {
   const [completedGoal, setCompletedGoal] = useState (0)
   const [deposit, setDeposit] = useState (0)
   const [currentGoal, setCurrentGoal] = useState({})
+
 
   useEffect (() => {
     fetch(URL)
@@ -82,6 +83,7 @@ function App() {
         <div>totalSavedAmount: {totalSavedAmount}</div>
         <div>completedGoal: {completedGoal}</div>
       </header>
+      
       <form><h3>deposit form</h3><select value={currentGoal.id} onChange={event => handlecurrentgoal(event.target.value)}>
         {goals.map((goal, index) => (
           <option key={index} value={goal.id}>{goal.name}</option>

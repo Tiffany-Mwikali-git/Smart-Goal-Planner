@@ -3,7 +3,9 @@ import './App.css';
 import { useEffect } from 'react';
 import { useState } from 'react';
 import Warning from './components/Warning';
+import GoalForm from './components/GoalForm';
 const URL = 'https://goal-json-server.onrender.com/goals'
+
 
 function App() {
   // const goals = [
@@ -74,6 +76,17 @@ function App() {
         setCurrentGoal(goal)
     }
   }
+
+  function onSubmit(goal) {
+     fetch(`${URL}` , {
+      method: 'POST', 
+    headers:{
+      'Content-type': "application/json"
+    },
+  body:JSON.stringify(goal)})
+  
+}
+
   return (
     <div className="App">
       <header>
@@ -83,7 +96,9 @@ function App() {
         <div>totalSavedAmount: {totalSavedAmount}</div>
         <div>completedGoal: {completedGoal}</div>
       </header>
-      
+      <section>
+        <GoalForm onSubmit={onSubmit}/>
+      </section>
       <form><h3>deposit form</h3><select value={currentGoal.id} onChange={event => handlecurrentgoal(event.target.value)}>
         {goals.map((goal, index) => (
           <option key={index} value={goal.id}>{goal.name}</option>

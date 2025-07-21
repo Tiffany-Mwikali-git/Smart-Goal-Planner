@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+// const URL = 'https://goal-json-server.onrender.com/goals'
 
 const initialState = {
   name: "",
@@ -22,10 +23,15 @@ const GoalForm = ({ onSubmit, editingGoal }) => {
     const { name, value } = e.target;
     setGoal({ ...goal, [name]: value });
   };
-
+  
+   const handleNumberChange = (e) => {
+    const { name, value } = e.target;
+    setGoal({ ...goal, [name]: Number(value) });
+  };
   const handleSubmit = (e) => {
     e.preventDefault();
     onSubmit(goal);
+    
     setGoal(initialState);
   };
 
@@ -34,8 +40,8 @@ const GoalForm = ({ onSubmit, editingGoal }) => {
       <h2>{editingGoal ? "Edit Goal" : "Add New Goal"}</h2>
       <input name="name" placeholder="Goal Name" value={goal.name} onChange={handleChange} required />
       <input name="category" placeholder="Category" value={goal.category} onChange={handleChange} />
-      <input name="targetAmount" type="number" placeholder="Target Amount" value={goal.targetAmount} onChange={handleChange} required />
-      <input name="savedAmount" type="number" placeholder="Saved Amount" value={goal.savedAmount} onChange={handleChange} />
+      <input name="targetAmount" type="number" placeholder="Target Amount" value={goal.targetAmount} onChange={handleNumberChange} required />
+      <input name="savedAmount" type="number" placeholder="Saved Amount" value={goal.savedAmount} onChange={handleNumberChange} />
       <input name="deadline" type="date" value={goal.deadline} onChange={handleChange} required />
       <button type="submit">{editingGoal ? "Update" : "Add"}</button>
     </form>

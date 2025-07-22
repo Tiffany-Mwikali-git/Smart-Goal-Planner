@@ -37,7 +37,7 @@ const GoalForm = ({ onSubmit, editingGoal }) => {
 
   return (
     <form onSubmit={handleSubmit}>
-      <h2>{editingGoal ? "Edit Goal" : "Add New Goal"}</h2>
+      <h2>{editingGoal ? "Edit Goal" : " New Goal"}</h2>
       <input name="name" placeholder="Goal Name" value={goal.name} onChange={handleChange} required />
       <input name="category" placeholder="Category" value={goal.category} onChange={handleChange} />
       <input name="targetAmount" type="number" placeholder="Target Amount" value={goal.targetAmount} onChange={handleNumberChange} required />

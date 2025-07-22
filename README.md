@@ -1,70 +1,90 @@
-# Getting Started with Create React App
+# Smart Goal Planner
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+#### A simple Goal application built using React JS 
 
-## Available Scripts
+#### By **Tiffany Mwikali**
 
-In the project directory, you can run:
+## Description
 
-### `npm start`
+This is a minimalist smart goal planner application built using React JS. The app helps user to
+add their new goals, save some money, see all the daitails of one goal and also see their progress.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Features
 
-### `npm test`
+- Home page displaying a list of each goal
+- Individual post view of each goal
+- An add new goal form
+- Deposit some cash to your goal
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## How to Use
 
-### `npm run build`
+### Requirements
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- A computer
+- Access to the internet
+- A modern web browser
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### View Live Site
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Visit the deployed application at:
 
-### `npm run eject`
+The live site allows you to:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Browse through the list of all goals
+- Deposit some money
+- Add a new goal
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Local Development
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+If you want to run the project locally, you'll need:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- Node.js installed on your computer
+- Basic understanding of React JS
+- Code editor (VS Code recommended)
+- Terminal/Command Line
 
-## Learn More
+#### Installation Process
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. Clone this repository using:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+   ```bash
+   git clone git@github.com:tiffany-mwikali/Smart-goal-planner.git
+   ```
 
-### Code Splitting
+   or by downloading a ZIP file of the code.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+2. Navigate to the project directory:
 
-### Analyzing the Bundle Size
+   ```bash
+   cd react-blog
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+3. Install the required dependencies:
 
-### Making a Progressive Web App
+   ```bash
+   npm install
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+4. Run the development server:
 
-### Advanced Configuration
+   ```bash
+   npm run dev
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Technologies Used
 
-### Deployment
+- React JS
+- JavaScript 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## License
 
-### `npm run build` fails to minify
+MIT License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Copyright &copy; 2025 Tiffany Mwikali
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.

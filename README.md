@@ -29,7 +29,7 @@ add their new goals, save some money, see all the daitails of one goal and also 
 
 Visit the deployed application at:
 
-The live site allows you to:
+The live site allows you to: https://smart-goal-plan.netlify.app/
 
 - Browse through the list of all goals
 - Deposit some money
